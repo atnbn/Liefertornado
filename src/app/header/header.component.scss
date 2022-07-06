@@ -1,0 +1,39 @@
+header {
+    background-color: #ff9500;
+    height: 65px;
+}
+
+.box {
+    margin-left: 15px;
+    margin-right: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.img-box {
+    width: 15%;
+    display: flex;
+    justify-content: center;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+
+.addresse-box {
+    display: flex;
+    border-bottom: 1px solid #ffff;
+    color: white;
+    height: fit-content;
+    width: fit-content;
+
+    p{
+        font-size: 1rem;
+
+    }
+
+}
