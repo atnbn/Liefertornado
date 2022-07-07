@@ -13,17 +13,20 @@ header {
 }
 
 .img-box {
-    width: 15%;
     display: flex;
     justify-content: center;
 
     img {
-        width: 100%;
-        height: 100%;
+  
         object-fit: contain;
     }
 }
+.addrese-box__border{
+    min-width: 60%;
+    display: flex;
+    justify-content: center;
 
+}
 .addresse-box {
     display: flex;
     border-bottom: 1px solid #ffff;

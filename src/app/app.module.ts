@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule , ViewEncapsulation} from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -10,11 +10,19 @@ import {MatIconModule} from '@angular/material/icon';
 import { MatSliderModule } from '@angular/material/slider';
 import {MatButtonModule} from '@angular/material/button';
 import {MatMenuModule} from '@angular/material/menu';
-
+import {DeliveryorPickupComponent } from './deliverorpickup/deliverorpickup.component';
+import {MatTabsModule} from '@angular/material/tabs';
+import {MatChipsModule} from '@angular/material/chips';
+import { RestaurantsComponent } from './restaurants/restaurants.component';
+import {MatCardModule} from '@angular/material/card';
+import {MatInputModule} from '@angular/material/input'
 @NgModule({
+ 
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    DeliveryorPickupComponent,
+    RestaurantsComponent
   ],
   imports: [
     BrowserModule,
@@ -24,9 +32,16 @@ import {MatMenuModule} from '@angular/material/menu';
     MatIconModule,
     MatSliderModule,
     MatButtonModule,
-    MatMenuModule
+    MatMenuModule,
+    MatTabsModule,
+    MatChipsModule,
+    MatCardModule,
+    MatInputModule
+    
   ],
+  
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+
 })
 export class AppModule { }
