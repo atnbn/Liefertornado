@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { restaurants } from 'src/module/restaurants.class';
 
 @Component({
   selector: 'app-restaurants',
@@ -7,8 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RestaurantsComponent implements OnInit {
 
-
-local:string ="Döner Murat"; 
+  restaurant = new restaurants();
 
 
 
