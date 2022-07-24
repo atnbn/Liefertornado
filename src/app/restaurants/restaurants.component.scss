@@ -1,22 +1,52 @@
-.box{
+.box {
     margin-top: 50px;
     margin-left: 15%;
     margin-right: 15%;
-    }
+}
 
-
-.card{
+.card {
     display: flex;
 }
-.box-card{
+.box-card {
     margin: 10px;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-.restaurant-card{
-    height:  90px;
+.restaurant-card {
+    position: relative;
+    margin: 0;
+    padding: 0 !important;
+    display: flex;
+    border: 1px solid gray;
 }
 
+.descriptions {
+    padding-left: 10px;
+    padding-top: 10px;
+    row-gap: 25px;
+    display: flex;
+flex-direction: column;}
+h2 {
+    font-size: 1.8em;
+    margin: 0;
+}
+img {
+    width: 300px;
+    height: 150px;
 
+    object-fit: cover;
+}
 
+.infos{
+    display: flex;
+    gap: 25px;
+}
+.icon-class{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 10px;
+    }
+
+    

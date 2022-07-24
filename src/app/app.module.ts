@@ -13,16 +13,18 @@ import {MatMenuModule} from '@angular/material/menu';
 import {DeliveryorPickupComponent } from './deliverorpickup/deliverorpickup.component';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatChipsModule} from '@angular/material/chips';
-import { RestaurantsComponent } from './restaurants/restaurants.component';
 import {MatCardModule} from '@angular/material/card';
-import {MatInputModule} from '@angular/material/input'
+import {MatInputModule} from '@angular/material/input';
+import { RestaurantsComponent } from './restaurants/restaurants.component';
+import { MenuComponent } from './menu/menu.component'
 @NgModule({
  
   declarations: [
     AppComponent,
     HeaderComponent,
     DeliveryorPickupComponent,
-    RestaurantsComponent
+    RestaurantsComponent,
+    MenuComponent,
   ],
   imports: [
     BrowserModule,

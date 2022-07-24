@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { restaurants } from 'src/module/restaurants.class';
-
+import { AllArraysService } from '../services/all-arrays.service';
 @Component({
   selector: 'app-restaurants',
   templateUrl: './restaurants.component.html',
@@ -8,21 +7,10 @@ import { restaurants } from 'src/module/restaurants.class';
 })
 export class RestaurantsComponent implements OnInit {
 
-  restaurant = new restaurants();
-
-  restaurants = [
-    {
-      name: 'Murats Döner',
-      img: 'src/assets/img/doner-1753615_640.jpg',
-    },
-
-    { name: ''}
-  ]
-
-  constructor() { }
+  constructor( public allArrays : AllArraysService) { }
 
   ngOnInit(): void {
+    console.log(this.allArrays.restaurants)
   }
-
 
 }
