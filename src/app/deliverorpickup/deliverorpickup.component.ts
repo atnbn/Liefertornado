@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AllArraysService } from '../services/all-arrays.service';
 @Component({
   selector: 'app-deliverorpickup',
   templateUrl: './deliverorpickup.component.html',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 export class DeliveryorPickupComponent implements OnInit {
 
 
-  constructor() { }
+  constructor(
+    public allArrays: AllArraysService
+  ) { }
 
   ngOnInit(): void {
   }
 
-}
+
+
+
+  showTurkishFood() {
+    console.log('showTurkishFood');
+    }
+  }

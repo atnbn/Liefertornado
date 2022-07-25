@@ -7,6 +7,7 @@ export class AllArraysService {
   restaurants = [
     {
       name: 'Murats Döner',
+      typeTurkish: false,
       adresse: 'Köpenicker Str. 1',
       img: 'assets/img/doner-1753615_640.jpg',
       description: 'Murats Döner is a Turkish restaurant that serves Turkish cuisine.',
@@ -28,6 +29,7 @@ export class AllArraysService {
 
     {
       name: 'Asian Restaurant',
+      typeAsian: false,
       adresse: 'heimer Str. 4',
       img: 'assets/img/pexels-cats-coming-1907227.jpg',
       description: 'Asian restaurant is a restaurant that serves Asian cuisine.',

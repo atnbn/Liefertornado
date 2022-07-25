@@ -15,8 +15,10 @@ import {MatTabsModule} from '@angular/material/tabs';
 import {MatChipsModule} from '@angular/material/chips';
 import {MatCardModule} from '@angular/material/card';
 import {MatInputModule} from '@angular/material/input';
-import { RestaurantsComponent } from './restaurants/restaurants.component';
-import { MenuComponent } from './menu/menu.component'
+import { RestaurantsComponent } from './restaurants/restaurants.component'
+import { MenuComponent } from './menu/menu.component';
+
+
 @NgModule({
  
   declarations: [
@@ -24,7 +26,7 @@ import { MenuComponent } from './menu/menu.component'
     HeaderComponent,
     DeliveryorPickupComponent,
     RestaurantsComponent,
-    MenuComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
