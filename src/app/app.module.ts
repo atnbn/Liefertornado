@@ -17,6 +17,7 @@ import {MatCardModule} from '@angular/material/card';
 import {MatInputModule} from '@angular/material/input';
 import { RestaurantsComponent } from './restaurants/restaurants.component'
 import { MenuComponent } from './menu/menu.component';
+import { TurkishComponent } from './turkish/turkish.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { MenuComponent } from './menu/menu.component';
     HeaderComponent,
     DeliveryorPickupComponent,
     RestaurantsComponent,
-    MenuComponent
+    MenuComponent,
+    TurkishComponent
   ],
   imports: [
     BrowserModule,

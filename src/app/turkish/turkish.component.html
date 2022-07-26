@@ -1,0 +1,25 @@
+<div class="box">
+    <mat-form-field style="width: 30%;" class="example-full-width width" appearance="fill">
+        <mat-label>Restaurants and dishes</mat-label>
+        <input matInput >
+    </mat-form-field>
+        <div class="box-card">
+
+    <mat-card class="restaurant-card" *ngFor="let food of restaurantInfo" routerLink="menu">
+      
+        <div class="descriptions">
+            <h2>{{food.dishName}}</h2>
+            <p>{{food.dishDescription}}</p>
+            <div class="infos">
+                <div class="icon-class"> <mat-icon>
+                    schedule 
+                </mat-icon>
+                <span>
+                    {{food.dishPrice}}
+                </span>
+
+           
+ 
+            </div>
+        </div>
+</div>
