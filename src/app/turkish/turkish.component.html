@@ -1,21 +1,30 @@
 <div class="box">
 
-        <div class="box-card">
-            <img class="menu-img" src="assets/img/doner-1753615_640.jpg">
-            <h2  class="restaurant-name">Turkish Restaurant</h2>
-            <div class="restaurant-card" *ngFor="let food of restaurantInfo">
-    <mat-card>
-        <div class="descriptions">
-            <h2>{{food.dishName}}</h2>
-            <p>{{food.dishDescription}}</p>
-            <div class="infos">
-                <div class="icon-class"> 
-                <span class="price">
-                    {{food.dishPrice}}
-                </span>
-                <button class="add-basket" mat-icon-button><mat-icon>
-                    add
-                </mat-icon></button>
-            </div>
+    <div class="box-card">
+        <img class="menu-img" src="assets/img/doner-1753615_640.jpg">
+        <h2 class="restaurant-name">Turkish Restaurant</h2>
+        <div class="restaurant-card" *ngFor="let food of restaurantInfo">
+            <mat-card>
+                <div class="descriptions">
+                    <h2>{{food.dishName}}</h2>
+                    <p>{{food.dishDescription}}</p>
+                    <div class="infos">
+                        <div class="icon-class">
+                            <span class="price">
+                                {{food.dishPrice}}
+                            </span>
+                            <button class="add-basket" mat-icon-button>
+                                <mat-icon>
+                                    add
+                                </mat-icon>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </mat-card>
         </div>
+    </div>
 </div>
+
+<app-basket></app-basket>
