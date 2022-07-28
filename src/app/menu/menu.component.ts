@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AllArraysService } from '../services/all-arrays.service';
+
 @Component({
   selector: 'app-menu',
   templateUrl: './menu.component.html',
@@ -7,11 +7,9 @@ import { AllArraysService } from '../services/all-arrays.service';
 })
 export class MenuComponent implements OnInit {
 
-  constructor(public allArrays : AllArraysService) { }
+  constructor() { }
 
   ngOnInit(): void {
-    console.log(this.allArrays.restaurants);
-    
   }
 
 }

@@ -14,7 +14,7 @@ export class TurkishComponent implements OnInit {
  
   {
     dishName: 'KöfteSpieß',
-    dishprice: '6€',
+    dishPrice: '6€',
     dishDescription: 'KöfteSpieß mit Rinderhack oder Kalbshack',
   },
   {

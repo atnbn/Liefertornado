@@ -1,25 +1,21 @@
 <div class="box">
-    <mat-form-field style="width: 30%;" class="example-full-width width" appearance="fill">
-        <mat-label>Restaurants and dishes</mat-label>
-        <input matInput >
-    </mat-form-field>
-        <div class="box-card">
 
-    <mat-card class="restaurant-card" *ngFor="let food of restaurantInfo" routerLink="menu">
-      
+        <div class="box-card">
+            <img class="menu-img" src="assets/img/doner-1753615_640.jpg">
+            <h2  class="restaurant-name">Turkish Restaurant</h2>
+            <div class="restaurant-card" *ngFor="let food of restaurantInfo">
+    <mat-card>
         <div class="descriptions">
             <h2>{{food.dishName}}</h2>
             <p>{{food.dishDescription}}</p>
             <div class="infos">
-                <div class="icon-class"> <mat-icon>
-                    schedule 
-                </mat-icon>
-                <span>
+                <div class="icon-class"> 
+                <span class="price">
                     {{food.dishPrice}}
                 </span>
-
-           
- 
+                <button class="add-basket" mat-icon-button><mat-icon>
+                    add
+                </mat-icon></button>
             </div>
         </div>
 </div>

@@ -15,10 +15,10 @@ import {MatTabsModule} from '@angular/material/tabs';
 import {MatChipsModule} from '@angular/material/chips';
 import {MatCardModule} from '@angular/material/card';
 import {MatInputModule} from '@angular/material/input';
-import { RestaurantsComponent } from './restaurants/restaurants.component'
-import { MenuComponent } from './menu/menu.component';
 import { TurkishComponent } from './turkish/turkish.component';
-
+import { StartScreenComponent } from './start-screen/start-screen.component';
+import { BasketComponent } from './basket/basket.component';
+import { MenuComponent } from './menu/menu.component';
 
 @NgModule({
  
@@ -26,9 +26,10 @@ import { TurkishComponent } from './turkish/turkish.component';
     AppComponent,
     HeaderComponent,
     DeliveryorPickupComponent,
-    RestaurantsComponent,
-    MenuComponent,
-    TurkishComponent
+    TurkishComponent,
+    StartScreenComponent,
+    BasketComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,

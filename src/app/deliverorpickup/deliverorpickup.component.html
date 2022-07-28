@@ -1,6 +1,133 @@
 
-
 <div class="block">
-    <button routerLink="turkish">Turkish</button>
+    <button mat-button color="primary" routerLink="turkish">Turkish</button>
+    <button mat-button color="primary" routerLink="asian">Asian</button>
+    <button mat-button color="primary" routerLink="Italian">Italian</button>
+</div>
 
+
+
+<div class="box">
+    <mat-form-field style="width: 30%;" class="example-full-width width" appearance="fill">
+        <mat-label>Restaurants and dishes</mat-label>
+        <input matInput>
+    </mat-form-field>
+    <div class="box-card">
+
+        <mat-card class="restaurant-card" routerLink="/turkish">
+            <img src="assets/img/doner-1753615_640.jpg">
+            <div class="descriptions">
+                <h2>Murats Imbiss</h2>
+                <p>Murats Döner is a Turkish restaurant that serves Turkish cuisine</p>
+                <div class="infos">
+                    <div class="icon-class">
+                        <mat-icon>
+                            schedule
+                        </mat-icon>
+                        <span>
+                            35-50 min
+                        </span>
+                    </div>
+
+                    <div class="icon-class">
+                        <mat-icon>
+                            pedal_bike
+                        </mat-icon>
+                        <span>
+                            5€
+                        </span>
+                    </div>
+                    <div class="icon-class">
+                        <mat-icon>
+                            shopping_basket
+                        </mat-icon>
+                        <span>
+                            3€
+                        </span>
+                    </div>
+
+
+                </div>
+            </div>
+        </mat-card>
+
+
+
+
+
+
+        <mat-card class="restaurant-card" routerLink="asian">
+            <img src="assets/img/pexels-cats-coming-1907227.jpg">
+            <div class="descriptions">
+                <h2>Asian Restaurant</h2>
+                <p>Asian restaurant is a restaurant that serves Asian cuisine.</p>
+                <div class="infos">
+                    <div class="icon-class">
+                        <mat-icon>
+                            schedule
+                        </mat-icon>
+                        <span>
+                            20-45 min
+                        </span>
+                    </div>
+
+                    <div class="icon-class">
+                        <mat-icon>
+                            pedal_bike
+                        </mat-icon>
+                        <span>
+                            15€
+                        </span>
+                    </div>
+                    <div class="icon-class">
+                        <mat-icon>
+                            shopping_basket
+                        </mat-icon>
+                        <span>
+                            5€
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </mat-card>
+
+
+        <mat-card class="restaurant-card" routerLink="italian">
+            <img src="assets/img/pexels-pixabay-315755.jpg">
+            <div class="descriptions">
+                <h2>Pizza Italiano</h2>
+                <p>Pizza restaurant is a restaurant that serves pizza cuisine.</p>
+                <div class="infos">
+                    <div class="icon-class">
+                        <mat-icon>
+                            schedule
+                        </mat-icon>
+                        <span>
+                            30-45 min
+                        </span>
+                    </div>
+
+                    <div class="icon-class">
+                        <mat-icon>
+                            pedal_bike
+                        </mat-icon>
+                        <span>
+                            10€
+                        </span>
+                    </div>
+                    <div class="icon-class">
+                        <mat-icon>
+                            shopping_basket
+                        </mat-icon>
+                        <span>
+                            5€
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </mat-card>
+
+
+
+    </div>
 </div>
